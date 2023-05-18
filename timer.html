@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>시간 카운트다운</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>시간 카운트다운</h1>
+  <div class="container">
+    <div id="datetime"></div>
+    <div id="countdown">시간을 설정해 주세요!</div>
+    <div>
+      <label for="input-hours">시간:</label>
+      <input type="number" id="input-hours" min="0" required placeholder="0은 빈칸 가능">
+    </div>
+    <div>
+      <label for="input-minutes">분:</label>
+      <input type="number" id="input-minutes" min="0" max="59" required placeholder="0 ~ 59 까지 입력 가능">
+    </div>
+    <div>
+      <label for="input-seconds">초:</label>
+      <input type="number" id="input-seconds" min="0" max="59" required placeholder="0 ~ 59 까지 입력 가능">
+    </div>
+    <div id="button-container">
+      <button id="start">시작</button>
+      <button id="pause" disabled>일시정지</button>
+      <button id="reset" disabled>초기화</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
